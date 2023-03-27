@@ -1,0 +1,106 @@
+:root {
+  --text: black;
+  --background: white;
+  --hover: rgba(0, 0, 0, 0.1);
+  --hover-color: white;
+}
+
+[data-theme = "dark"] {
+    --text: white;
+    --background: rgb(34, 34, 34);
+    --hover: rgba(255, 255, 255, 0.1);
+    --hover-color: white;
+  }
+
+html, body {
+    background-color: var(--background);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+@font-face {
+    font-family: SegoeIcons;
+    src:url("Assets/Segoe Fluent Icons.ttf");
+}
+
+header {
+    -webkit-app-region: drag;
+    height: 50px;
+    background-color: none;
+}
+
+.exit {
+    -webkit-app-region: no-drag;
+    color: 	var(--text);
+    position: relative;
+    float: right;
+    font-size: 12pt;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-family: SegoeIcons;
+}
+
+.exit:hover {
+    cursor: pointer;
+    background-color: #ff0000;
+    color: var(--hover-color);
+}
+
+.min {
+    -webkit-app-region: no-drag;
+    color: 	var(--text);
+    position: relative;
+    float: right;
+    font-size: 12pt;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-family: SegoeIcons;
+}
+
+.min:hover {
+    cursor: pointer;
+    background-color: var(--hover);
+}
+
+.logo {
+    position: relative;
+    width: 30px;
+    float: left;
+    margin: 10px;
+    filter: brightness(100%);
+}
+
+.title {
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 15px;
+    color: var(--text);
+    font-family:sans-serif;
+    font-size: 10pt;
+}
+
+#switch {
+    font-family: SegoeIcons;
+    color: var(--text);
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    font-size: 12pt;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    background-color: var(--background);
+}
+
+#switch:hover {
+    background-color: var(--hover);
+}

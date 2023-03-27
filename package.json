@@ -1,0 +1,23 @@
+{
+  "name": "minesweeperx",
+  "version": "1.0.0",
+  "description": "Minesweeper in Win11 UI style",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . Animate --out=dist/win --platform=win32 --arch=x64 --icon=icon.ico"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewZenn/MineSweeperX.git"
+  },
+  "author": "Matthew Zenn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MatthewZenn/MineSweeperX/issues"
+  },
+  "homepage": "https://github.com/MatthewZenn/MineSweeperX#readme",
+  "dependencies": {
+    "electron": "^23.2.0"
+  }
+}
