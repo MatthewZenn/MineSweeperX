@@ -1,14 +1,14 @@
 :root {
   --text: black;
   --background: white;
-  --hover: rgba(0, 0, 0, 0.1);
+  --hover: rgba(0, 0, 0, 0.075);
   --hover-color: white;
 }
 
 [data-theme = "dark"] {
     --text: white;
     --background: rgb(34, 34, 34);
-    --hover: rgba(255, 255, 255, 0.1);
+    --hover: rgba(255, 255, 255, 0.075);
     --hover-color: white;
   }
 
@@ -103,4 +103,24 @@ header {
 
 #switch:hover {
     background-color: var(--hover);
+}
+
+#play {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    background-color: var(--background);
+    border-radius: 8px;
+    border: none;
+}
+
+#play:hover {
+    background-color: var(--hover);
+}
+
+#face {
+    width: 100%;
 }
